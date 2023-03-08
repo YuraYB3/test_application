@@ -11,10 +11,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double _textSize = 24;
+  int _textSize = 24;
   Color _backgroundColor = Colors.white;
-  var i = 1;
-
   void _changeTextSize() {
     if (_textSize > 72) {
       _textSize = 24;
@@ -52,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: Text(
                 'Hey there',
-                style: TextStyle(fontSize: _textSize),
+                style: TextStyle(fontSize: _textSize.toDouble()),
               ),
             ),
           ),
